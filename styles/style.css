@@ -1,0 +1,47 @@
+body{
+    background-color: #2f2f2f;
+    display: flex;
+    justify-content: center;
+}
+
+.movieTitles{
+    font-size: 2.5vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#moviesDiv{
+    display: none;
+    grid-template-columns: repeat(4, 40vh);
+    gap: 4vh;
+    padding: 2vh;
+}
+.movieCards{
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 65vh;
+    width: 40vh;
+    border: 1px solid black;
+    word-wrap: break-word;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+.coverImages{
+    height: 30vh;
+    width: 22vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.infoSpan{
+    font-weight: bold;
+    color: #2e2e2e;
+}
+.movieInfoSpan {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.movieDescriptionDiv {
+    display: none;
+}
