@@ -4,8 +4,10 @@ updateView();
 
 function updateView() {
     document.getElementById('app').innerHTML = /*HTML*/`
-    <button onclick="showHideLeaderboard()">Show or hide Leaderboard</button>
-    <div id='moviesDiv'></div>
+    <div id="container">
+        <button onclick="showHideLeaderboard()">Show or hide Leaderboard</button>
+        <div id='moviesDiv' style="display: none;"></div>
+    <div>
      `;
 }
 

@@ -4,7 +4,7 @@ const model = {
     app: {
         loggedInUser: null,
         currentPage: 'loginPage',
-        dispayMode: 'dark',
+        displayMode: 'dark',
         language: 'no',
     },
     inputs: {
