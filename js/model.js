@@ -12,6 +12,22 @@ const model = {
 
     },
     //Data
+    users:[
+        {
+            username: 'ellie',
+            password: '1234',
+            profileImage: './img/profileImages/EllieMarie.jpg',
+            isAdmin: true,
+            description: "I'm the developer of this app",
+        },
+        {
+            username: 'admin',
+            password: '1234',
+            profileImage: '',
+            isAdmin: true,
+            description: "Im the Admin here",
+        },
+    ],
     
     movies:[
         {
