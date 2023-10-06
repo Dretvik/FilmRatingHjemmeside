@@ -8,7 +8,7 @@ function loginView(){
             <img id="turtlePowerLogo" src="${model.app.logo}.jpg">
             <h1>Welcome to TurtlePower Movies</h1>
             <div class="loginDivs">Username:
-            <input autofocus id="loginUsernameInput" type="text" placeholder="Username" value=""></div>
+            <input autofocus="true" id="loginUsernameInput" type="text" placeholder="Username" value=""></div>
             <br>
             <div class="loginDivs">Password:
             <input id="loginPasswordInput" type="password" placeholder="Password" value=""></div>
@@ -47,10 +47,8 @@ function showForgotPasswordDiv(){
     movieDivStyle = document.getElementById('forgotPasswordDiv').style;
     if (movieDivStyle.display === 'none'){
         movieDivStyle.display = 'block';
-        showMoviesView();
     } else {
         movieDivStyle.display = 'none';
-        document.getElementById('moviesDiv').innerHTML = '';
     }
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -61,26 +59,28 @@ function registrationView(){
         <div id="registrationContainer">
             <img id="turtlePowerLogo" src="${model.app.logo}.jpg">
             <h1>TurtlePower Movies</h1>
+            <div>Enter your information here:</div>
+            <br>
             <div id="registerDiv">
             <div class="registrationDivs">
                 <span class="registerGridAreaA">Username:</span>
-                <input class="registerGridAreaB" type="text" placeholder="Username" value="">
+                <input  id="registerUsername" class="registerGridAreaB" type="text" placeholder="Username" value="">
             </div>
             <div class="registrationDivs">
                 <span class="registerGridAreaA">e-mail:</span>
-                <input class="registerGridAreaB" type="email" placeholder="e-mail" value="">
+                <input id="registerEmail" class="registerGridAreaB" type="email" placeholder="e-mail" value="">
             </div>
             <div class="registrationDivs">
                 <span class="registerGridAreaA">Your password:</span>
-                <input class="registerGridAreaB" type="text" placeholder="Password" value="">
+                <input id="registerPassword1" class="registerGridAreaB" type="text" placeholder="Password" value="">
             </div>
             <div class="registrationDivs">
                 <span class="registerGridAreaA">Enter password again:</span>
-                <input class="registerGridAreaB" type="text" placeholder="Password" value="">
+                <input id="registerPassword2" class="registerGridAreaB" type="text" placeholder="Password" value="">
             </div>
             </div>
             <div id= "registrationButtonsDiv">
-            <button id="registerButton" onclick="loginView()">Register</button>
+            <button id="registerButton" onclick="registerUser()">Register</button>
          </div>
         </div>
     </div>

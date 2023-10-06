@@ -9,13 +9,21 @@ const model = {
         logo: './img/turtlePowerLogo',
     },
     inputs: {
-
+        user: {
+            username: '',
+            password: '',
+            email: '',
+            profileImage: '',
+            isAdmin: false,
+            description: '',
+        },
     },
     //Data
     users:[
         {
             username: 'ellie',
             password: '1234',
+            email: 'elliemarie@getacademy.no',
             profileImage: './img/profileImages/EllieMarie.jpg',
             isAdmin: true,
             description: "I'm the developer of this app",
@@ -23,6 +31,7 @@ const model = {
         {
             username: 'admin',
             password: '1234',
+            email: 'elliemarie@getacademy.no',
             profileImage: '',
             isAdmin: true,
             description: "Im the Admin here",
