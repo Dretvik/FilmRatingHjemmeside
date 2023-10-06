@@ -6,6 +6,7 @@ const model = {
         currentPage: 'loginPage',
         displayMode: 'dark',
         language: 'no',
+        logo: './img/turtlePowerLogo',
     },
     inputs: {
 
