@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+  }
+body{
+    background-color: #2f2f2f;
+    justify-content: center;
+    text-align: center;
+}
+#turtlePowerLogo{
+  border-radius: 50%;
+  box-shadow: 4px 4px orange;
+}
+
+/* Dropdown Menu CSS settings */
+
+/* Style for the dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the main menu button */
+.dropbtn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 40px;
+  left: 40px;
+}
+
+/* Style for the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2e2e2e;
+  min-width: 160px;
+  left: 40;
+  top: 40;
+} 
+
+/* Style for dropdown content buttons */
+.dropdown-content button {
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-top:  1px solid orange;
+  border-bottom:  1px solid orange;
+}
+
+/* Show the dropdown content when the main menu button is hovered over */
+.dropdown:hover .dropdown-content {
+  display: block;
+  position: fixed;
+  top: 75px;
+  left: 40px;
+  border: 1px solid orange;
+
+}

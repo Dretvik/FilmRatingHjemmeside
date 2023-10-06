@@ -20,6 +20,11 @@ const model = {
     },
     //Data
     users:[
+        //user for easy access:
+        // {
+        //     username: '',
+        //     password: '',
+        // },
         {
             username: 'ellie',
             password: '1234',

@@ -93,11 +93,18 @@ function mainPageView() {
     document.getElementById('app').innerHTML = /*HTML*/`
     <img id="turtlePowerLogo" src="${model.app.logo}.jpg">
     <h1>TurtlePower Movies</h1>
-    <div id="container">
+    <!--Adding dropdown menu -->
+    <div id="menuButtonsContainer">
+    <div class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+      <button onclick="showHideLeaderboard()">Show or hide Leaderboard</button>
         <button onclick="userLogout()">Logout</button>
-        <button onclick="showHideLeaderboard()">Show or hide Leaderboard</button>
+        <!-- Add more buttons here if needed -->
+      </div>
+    </div>
+  </div>
         <div id='moviesDiv' style="display: none;"></div>
-    <div>
      `;
 }
 
