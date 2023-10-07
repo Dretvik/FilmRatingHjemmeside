@@ -16,6 +16,7 @@ const model = {
             profileImage: '',
             isAdmin: false,
             description: '',
+            favoriteMovies: [],
         },
     },
     //Data
@@ -26,20 +27,22 @@ const model = {
         //     password: '',
         // },
         {
-            username: 'ellie',
+            username: 'Ellie',
             password: '1234',
             email: 'elliemarie@getacademy.no',
             profileImage: './img/profileImages/EllieMarie.jpg',
             isAdmin: true,
-            description: "I'm the developer of this app",
+            description: "Hello, my name is Ellie, and I'm the developer of this website. I'm writing everthing myself and this is only for training purpuses, but it is a really fun project to work on.",
+            favoriteMovies: [],
         },
         {
-            username: 'admin',
+            username: 'Admin',
             password: '1234',
             email: 'elliemarie@getacademy.no',
             profileImage: '',
             isAdmin: true,
             description: "Im the Admin here",
+            favoriteMovies: [],
         },
     ],
     

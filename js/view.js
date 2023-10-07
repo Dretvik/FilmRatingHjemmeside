@@ -94,16 +94,17 @@ function mainPageView() {
     <img id="turtlePowerLogo" src="${model.app.logo}.jpg">
     <h1>TurtlePower Movies</h1>
     <!--Adding dropdown menu -->
-    <div id="menuButtonsContainer">
     <div class="dropdown">
       <button class="dropbtn">Menu</button>
       <div class="dropdown-content">
-      <button onclick="showHideLeaderboard()">Show or hide Leaderboard</button>
+        <button onclick="mainPageView()">Main Page</button>
+        <button onclick="showHideLeaderboard()">Show or hide Leaderboard</button>
+        <button onclick="profilePageView()">Profile Page</button>
+        <br>
         <button onclick="userLogout()">Logout</button>
         <!-- Add more buttons here if needed -->
       </div>
     </div>
-  </div>
         <div id='moviesDiv' style="display: none;"></div>
      `;
 }
@@ -139,4 +140,40 @@ function showHideLeaderboard(){
         movieDivStyle.display = 'none';
         document.getElementById('moviesDiv').innerHTML = '';
     }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Profile page View
+
+function profilePageView(){
+    const user = model.app.loggedInUser;
+    document.getElementById('app').innerHTML = /*HTML*/`
+    <div id="headerDiv">
+        <img id="turtlePowerLogo" src="${model.app.logo}.jpg">
+        <h1>TurtlePower Movies</h1>
+            <!--Adding dropdown menu -->
+    <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+            <button onclick="mainPageView()">Main Page</button>
+            <button onclick="showHideLeaderboard()">Show or hide Leaderboard</button>
+            <button onclick="profilePageView()">Profile Page</button>
+            <button onclick="userLogout()">Logout</button>
+      <!-- Add more buttons here if needed -->
+         </div>
+      </div>
+    </div>
+    <hr>
+    <div id="profilePageContainer">
+        <h2>Hello ${user.username}, welcome to your profile!</h2>
+        <br>
+        <div id="profileInfoDiv">
+        <div class='profileInfoGridAreaA'><h2>About ${user.username} </h2>${user.description}</div>
+        <img class="prorfileImages" class='profileInfoGridAreaA' src="${user.profileImage}">
+        </div>
+        <div></div>
+    </div>
+    `;
+
+    // Langt ifra ferdig med profilside, jobber videre på den snart! 
 }

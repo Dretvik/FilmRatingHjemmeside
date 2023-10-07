@@ -5,7 +5,8 @@
 
 //Login function
 function userLogin(username, password){
-    username = document.getElementById('loginUsernameInput').value.toLowerCase();
+    const usernameInput = document.getElementById('loginUsernameInput');
+    username = usernameInput.value.charAt(0).toUpperCase() + usernameInput.value.slice(1);
     password = document.getElementById('loginPasswordInput').value;
     for (let user of model.users){
         if (username === user.username && password === user.password){
@@ -21,12 +22,13 @@ function userLogin(username, password){
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Registration Page
 function registerUser(){
-    const username = document.getElementById('registerUsername').value.toLowerCase();
+    const usernameInput = document.getElementById('registerUsername');
+    const username = usernameInput.value.charAt(0).toUpperCase() + usernameInput.value.slice(1);
     const email = document.getElementById('registerEmail').value.toLowerCase();
     const password1 = document.getElementById('registerPassword1').value;
     const password2 = document.getElementById('registerPassword1').value;
     
-    if(password1 === password2){
+    if(password1.value === password2.value){
         const newUser = {
             username: username,
             email: email,

@@ -1,0 +1,31 @@
+#profilePageContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#profileInfoDiv{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "a b";
+    word-wrap: break-word;
+    height: 40rem;
+    width: 40rem;
+    border: 1px solid orange;
+    padding-top: 50px;
+}
+.prorfileImages{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+}
+.profileInfoGridAreaA{
+    width: 80%;
+    grid-area: a;
+    padding-left: 40px;
+}
+.profileInfoGridAreaB{
+    grid-area: b;
+    width: 50%
+}
