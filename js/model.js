@@ -1,4 +1,5 @@
 //Model
+let currentIndexOfMainCarousel = 0;
 
 const model = {
     app: {
@@ -21,11 +22,11 @@ const model = {
     },
     //Data
     users:[
-        //user for easy access:
-        // {
-        //     username: '',
-        //     password: '',
-        // },
+        // user for easy access:
+        {
+            username: '',
+            password: '',
+        },
         {
             username: 'Ellie',
             password: '1234',

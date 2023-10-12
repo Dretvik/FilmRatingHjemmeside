@@ -36,8 +36,39 @@
     font-size: 1rem;
 }
 .movieInfoSpan {
+    color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .movieDescriptionDiv {
     display: none;
+}
+/* Innstilling for CarouselView*/
+.carousel {
+    display: flex; /* Make the carousel items flex containers */
+    overflow: hidden; /* Hide overflowing content */
+    transition: transform 1.5s ease; /* Add a transition for smooth sliding */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#prevButton, #nextButton {
+    margin: 10px;
+    width: 100px;
+    height: 22px;
+
+}
+#moviesCarousel {
+    flex-direction: row; 
+    gap: 10px; 
+}
+.movieCardsInCarousel {
+    flex: 0 0 300px; 
+    height: 600px;
+    border-radius: 30px;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    word-wrap: break-word;
+    background-color: antiquewhite;
+    cursor: pointer;
 }

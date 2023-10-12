@@ -22,7 +22,10 @@
 }
 .registerGridAreaA{
     grid-area: a;
+    width: 200px;
+    /*text-align: end;*/
 }
 .registerGridAreaB{
     grid-area: b;
+    width: 200px;
 }
