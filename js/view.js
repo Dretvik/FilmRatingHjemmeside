@@ -148,6 +148,7 @@ function showHigestRatedMoviesCarouselView(){
         <div><span class=infoSpan>Staring: </span><span class="movieInfoSpan">${movie.staringActors}</span></div>
         <div class="movieDescriptionDiv"><span class=infoSpan>Description:</span><span class="movieInfoSpan">${movie.description}</span></div>
         <div><span class=infoSpan></span><span class="movieInfoSpan"></span></div>
+        <button onclick="addMovieToLoggedInUserFavorites(${movie.id})">Add to favorites</button>
         </div>
         `;
     moviesCarousel.appendChild(movieCard);
@@ -171,6 +172,8 @@ function showMoviesView(){
         <div><span class=infoSpan>Staring: </span><span class="movieInfoSpan">${movie.staringActors}</span></div>
         <div class="movieDescriptionDiv"><span class=infoSpan>Description:</span><span class="movieInfoSpan">${movie.description}</span></div>
         <div><span class=infoSpan></span><span class="movieInfoSpan"></span></div>
+        <button onclick="addMovieToLoggedInUserFavorites(${movie.id})">Add to favorites</button>
+
         </div>
         `;
     } 
@@ -191,6 +194,7 @@ function showHideLeaderboard(){
 
 function profilePageView(){
     const user = model.app.loggedInUser;
+    const favoriteMovieTitles = user.favoriteMovies.map(movie => movie.title).join(', <br>');
     document.getElementById('app').innerHTML = /*HTML*/`
     <div id="headerDiv">
         <img id="turtlePowerLogo" src="${model.app.logo}.jpg">
@@ -207,15 +211,16 @@ function profilePageView(){
          </div>
       </div>
     </div>
-    <hr>
     <div id="profilePageContainer">
         <h2>Hello ${user.username}, welcome to your profile!</h2>
         <br>
         <div id="profileInfoDiv">
         <div class='profileInfoGridAreaA'><h2>About ${user.username} </h2>${user.description}</div>
         <img class="prorfileImages" class='profileInfoGridAreaA' src="${user.profileImage}">
+            <div><h2>Your Favorite Movies:</h2> <br>
+                <div id="favoriteMoviesDivProfilePage">${favoriteMovieTitles}</div>
+            </div>
         </div>
-        <div></div>
     </div>
     `;
 
