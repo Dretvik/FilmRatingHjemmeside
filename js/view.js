@@ -105,6 +105,11 @@ function mainPageView() {
         <!-- Add more buttons here if needed -->
       </div>
     </div>
+          <!--  Adding Search for title function -->
+        <div class="searchDiv">
+          <input type="text" id="searchInput" placeholder="Search movies...">
+          <button onclick="performSearch()">Search</button>
+      </div>
     <!-- CarouselView -->
     <div class="carouselContainer">
         <div id="mainCarouselButtonsDiv">Higest Rated Movies:<br>
@@ -188,6 +193,41 @@ function showHideLeaderboard(){
         document.getElementById('moviesDiv').innerHTML = '';
     }
 }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Search Page
+
+// function searchMovies(query) {
+//     const results = [];
+//     const lowercaseQuery = query.toLowerCase();
+
+//     for (const movie of model.movies) {
+//         if (movie.title.toLowerCase().includes(lowercaseQuery)) {
+//             results.push(movie);
+//         }
+//     }
+
+//     return results;
+// }
+// function performSearch() {
+//     const searchInput = document.getElementById('searchInput');
+//     const query = searchInput.value;
+//     const searchResults = searchMovies(query);
+//     // Need to add what to do with a for loop
+// }
+// function displaySearchResults(searchResults) {
+//     const resultsContainer = document.getElementById('searchResults');
+//     resultsContainer.innerHTML = ''; // Clear previous results
+
+//     if (searchResults.length === 0) {
+//         resultsContainer.innerHTML = 'No results found.';
+//     } else {
+//         for (const movie of searchResults) {
+//             const resultItem = document.createElement('div');
+//             resultItem.textContent = movie.title;
+//             resultsContainer.appendChild(resultItem);
+//         }
+//     }
+// }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Profile page View
