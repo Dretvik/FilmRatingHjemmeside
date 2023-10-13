@@ -98,27 +98,27 @@ function mainPageView() {
       <button class="dropbtn">Menu</button>
       <div class="dropdown-content">
         <button onclick="mainPageView()">Main Page</button>
-        <button onclick="showHideLeaderboard()">Show or hide Leaderboard</button>
         <button onclick="profilePageView()">Profile Page</button>
         <br>
         <button onclick="userLogout()">Logout</button>
         <!-- Add more buttons here if needed -->
       </div>
     </div>
-          <!--  Adding Search for title function -->
-        <div class="searchDiv">
-          <input type="text" id="searchInput" placeholder="Search movies...">
-          <button onclick="performSearch()">Search</button>
-      </div>
+    <!--  Adding Search for title function -->
+    <div class="searchDiv">
+    <input type="text" id="searchInput" placeholder="Search movies...">
+    <button onclick="performSearch()">Search</button>
+    </div>
     <!-- CarouselView -->
     <div class="carouselContainer">
-        <div id="mainCarouselButtonsDiv">Higest Rated Movies:<br>
-            <button id="prevButton" onclick="previousCardInHigestRatedCarousel()">Previous</button>
-            <button id="nextButton" onclick="nextCardInHigestRatedCarousel()">Next</button>
-        </div>
-        <div id="moviesCarousel" class="carousel"></div>
+    <div id="mainCarouselButtonsDiv">Higest Rated Movies:<br>
+    <button id="prevButton" onclick="previousCardInHigestRatedCarousel()">Previous</button>
+    <button id="nextButton" onclick="nextCardInHigestRatedCarousel()">Next</button>
     </div>
-
+    <div id="moviesCarousel" class="carousel"></div>
+    </div>
+    
+    <button id="leaderboardButton" onclick="showHideLeaderboard()">Show All Movies</button>
     <div id='moviesDiv' style="display: none;"></div>
      `;
      showHigestRatedMoviesCarouselView();
@@ -244,7 +244,6 @@ function profilePageView(){
         <button class="dropbtn">Menu</button>
         <div class="dropdown-content">
             <button onclick="mainPageView()">Main Page</button>
-            <button onclick="showHideLeaderboard()">Show or hide Leaderboard</button>
             <button onclick="profilePageView()">Profile Page</button>
             <button onclick="userLogout()">Logout</button>
       <!-- Add more buttons here if needed -->

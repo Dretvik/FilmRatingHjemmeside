@@ -72,3 +72,12 @@
     background-color: antiquewhite;
     cursor: pointer;
 }
+#leaderboardButton{
+    margin: 10px;
+    height: 40px;
+    background-color: rgb(255, 163, 163);
+}
+#leaderboardButton:hover{
+    background-color: #ec4040;
+    font-weight: bolder;
+}
