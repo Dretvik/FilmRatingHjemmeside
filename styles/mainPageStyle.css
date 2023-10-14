@@ -1,0 +1,40 @@
+
+/* Innstilling for CarouselView*/
+.carousel {
+    display: flex; 
+    overflow: hidden; 
+    transition: transform 1.5s ease;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#prevButton, #nextButton {
+    margin: 10px;
+    width: 100px;
+    height: 22px;
+
+}
+#moviesCarousel {
+    flex-direction: row; 
+    gap: 10px; 
+}
+.movieCardsInCarousel {
+    flex: 0 0 300px; 
+    height: 600px;
+    border-radius: 30px;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    word-wrap: break-word;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+#leaderboardButton{
+    margin: 10px;
+    height: 40px;
+    background-color: rgb(255, 163, 163);
+}
+#leaderboardButton:hover{
+    background-color: #ec4040;
+    font-weight: bolder;
+}

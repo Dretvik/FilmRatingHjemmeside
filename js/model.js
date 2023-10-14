@@ -1,6 +1,7 @@
 //Model
 let currentIndexOfMainCarousel = 0;
 
+const app = document.getElementById('app');
 const model = {
     app: {
         loggedInUser: null,
