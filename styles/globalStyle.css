@@ -1,3 +1,8 @@
+  /* Note: This colors are transparent! */
+  /* 
+  background-color: #1C00ff00;
+  background-color: #00000000; 
+  */
 * {
     box-sizing: border-box;
   }
@@ -67,18 +72,57 @@ hr {
   border-top:  1px solid black;
   border-bottom:  1px solid black;
 }
+
+/* Show the dropdown content when the main menu button is hovered over */
+.dropdown:hover .dropdown-content {
+  display: block;
+  position: fixed;
+  background-color: antiquewhite;
+  top: 75px;
+  left: 40px;
+  border: 1px solid black;
+}
+.downbar-content .downbar-buttons:hover{
+  background-color: black;
+}
+
+/* Style for Search Div*/
+.searchDiv{
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  /* This color are transparent! */
+  background-color: #1C00ff00;
+}
+.searchButton{
+  background-color: #3498db;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+#searchInput{
+  padding: 10px;
+}
+
+
 /* Style for Movie cards */
 .movieTitles{
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  height: 40px;
+  height: 50px;
+  color: darkblue;
 }
 #moviesDiv{
   display: grid;
   height: 95%;
   width: 100%;
   gap: 1rem;
-  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 .movieCards{
@@ -96,7 +140,6 @@ hr {
 .coverImages{
   height: 45%;
   width: 95%;
-  position:relative;
   margin-left: auto;
   margin-right: auto;
 }
@@ -111,17 +154,4 @@ hr {
 }
 .movieDescriptionDiv {
   display: none;
-}
-/* Show the dropdown content when the main menu button is hovered over */
-.dropdown:hover .dropdown-content {
-  display: block;
-  position: fixed;
-  background-color: antiquewhite;
-  top: 75px;
-  left: 40px;
-  border: 1px solid black;
-
-}
-#searchInput{
-  margin-bottom: 10px;
 }

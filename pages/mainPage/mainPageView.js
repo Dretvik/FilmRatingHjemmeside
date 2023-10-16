@@ -1,4 +1,3 @@
-//View
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Hoved View
@@ -20,7 +19,7 @@ function mainPageView() {
     <!--  Adding Search for title function -->
     <div class="searchDiv">
     <input type="text" id="searchInput" placeholder="Search for Movie Titles...">
-    <button onclick="performSearch()">Search</button>
+    <button class="searchButton" onclick="performSearch()">Search</button>
     </div>
     <!-- CarouselView -->
     <div class="carouselContainer">
@@ -99,6 +98,7 @@ function showHideLeaderboard(){
     movieDivStyle = document.getElementById('moviesDiv').style;
     if (movieDivStyle.display === 'none'){
         movieDivStyle.display = 'grid';
+        document.getElementById('moviesDiv').innerHTML = '';
         showMoviesView();
     } else {
         movieDivStyle.display = 'none';

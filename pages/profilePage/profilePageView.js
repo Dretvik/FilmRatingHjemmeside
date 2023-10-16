@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Profile page View
 
-function profilePageView(){
+function profilePageView() {
     const user = model.app.loggedInUser;
     const favoriteMovieTitles = user.favoriteMovies.map(movie => movie.title).join(', <br>');
     app.innerHTML = /*HTML*/`
@@ -18,6 +18,11 @@ function profilePageView(){
       <!-- Add more buttons here if needed -->
          </div>
       </div>
+          <!-- Search for title function -->
+        <div class="searchDiv">
+            <input type="text" id="searchInput" placeholder="Search for Movie Titles...">
+            <button class="searchButton" onclick="performSearch()">Search</button>
+        </div>
     </div>
     <div id="profilePageContainer">
         <h2>Hello ${user.username}, welcome to your profile!</h2>

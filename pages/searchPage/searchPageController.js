@@ -6,7 +6,7 @@ function performSearch() {
 
     if (searchTerm === "") {
         // Display all movies if the search term is empty
-        showHigestRatedMoviesCarouselView();
+        return; //Have to fix this!
     } else {
         // Filter the movies based on the search term and display the matching ones
         const filteredMovies = model.movies.filter(movie => movie.title.toLowerCase().includes(searchTerm));
@@ -29,7 +29,7 @@ function performSearch() {
                 <!-- Add more buttons here if needed -->
               </div>
             </div>
-            <!--  Adding Search for title function -->
+            <!--  Search bar and for title function -->
             <div class="searchDiv">
             <input type="text" id="searchInput" placeholder="Search movies...">
             <button onclick="performSearch()">Search</button>
