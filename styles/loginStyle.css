@@ -16,3 +16,25 @@
     /* justify-content: center; */
     align-items: center;
 }
+
+/* 
+Adding grid areas to login page, just because im a pixel whore!
+
+Ellie, you have not done this yet: 
+
+- Need to do, not done at all!!!! 
+*/
+.loginDivs{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "a b";
+}
+.loginGridAreaA{
+    grid-area: a;
+    width: 200px;
+    /*text-align: end;*/
+}
+.loginGridAreaB{
+    grid-area: b;
+    width: 200px;
+}

@@ -36,6 +36,8 @@ hr {
 .dropbtn {
   background-color: #3498db;
   color: white;
+  box-shadow: 2px 1px orange;
+  border-radius: 10px;
   padding: 10px;
   border: none;
   cursor: pointer;
@@ -62,8 +64,8 @@ hr {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  border-top:  1px solid orange;
-  border-bottom:  1px solid orange;
+  border-top:  1px solid black;
+  border-bottom:  1px solid black;
 }
 /* Style for Movie cards */
 .movieTitles{
@@ -114,9 +116,10 @@ hr {
 .dropdown:hover .dropdown-content {
   display: block;
   position: fixed;
+  background-color: antiquewhite;
   top: 75px;
   left: 40px;
-  border: 1px solid orange;
+  border: 1px solid black;
 
 }
 #searchInput{
