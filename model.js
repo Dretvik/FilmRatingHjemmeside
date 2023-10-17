@@ -627,9 +627,6 @@ const model = {
             directors: ['Alfred Hitchcock'],
             staringActors: ['Anthony Perkins', 'Janet Leigh', 'Vera Miles'],
         },
-        //////////////////////////////////////////////////////////////////////////////////////////////
-        // Stopped at Psycho at place 34, the next to add wil be 'Parasite'.
-        //////////////////////////////////////////////////////////////////////////////////////////////
         {
             id: 44,
             title: 'Parasite',
