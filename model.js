@@ -17,6 +17,7 @@ const model = {
             profileImage: '',
             isAdmin: false,
             description: '',
+            moviesYouHaveRated: [],
             favoriteMovies: [],
         },
     },
@@ -30,6 +31,7 @@ const model = {
             profileImage: './img/profileImages/emptyUser.jpg',
             isAdmin: false,
             description: '',
+            moviesYouHaveRated: [],
             favoriteMovies: [],
         },
         {
@@ -39,6 +41,7 @@ const model = {
             profileImage: './img/profileImages/EllieMarie.jpg',
             isAdmin: true,
             description: "Hello, my name is Ellie, and I'm the developer of this website. I'm writing everthing myself and this is only for training purpuses, but it is a really fun project to work on.",
+            moviesYouHaveRated: [],
             favoriteMovies: [
                 {
                     id: 1,
@@ -62,6 +65,7 @@ const model = {
             profileImage: '',
             isAdmin: true,
             description: "Im the Admin here",
+            moviesYouHaveRated: [],
             favoriteMovies: [],
         },
     ],

@@ -15,6 +15,7 @@ function registerUser(){
             profileImage: '',
             isAdmin: false,
             description: '',
+            moviesYouHaveRated: [],
             favoriteMovies: [],
         };
         model.users.push(newUser);

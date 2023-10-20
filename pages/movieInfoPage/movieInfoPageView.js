@@ -6,7 +6,7 @@ function movieInfoPageView(movieId){
     app.innerHTML = menuLogoAndSearch + /*HTML*/`
     <div id="movieInfoButtonsDiv">
         <button class="movieInfoButtons" onclick="addMovieToLoggedInUserFavorites(${movie.id})">Add to favorites</button>
-        <button class="movieInfoButtons">Rate Movie</button>
+        <button class="movieInfoButtons" onclick="showRatingInput(${movie.id})">Rate Movie</button>
     </div>
     <div id="isFavoriteInfoDiv"></div>
     <div id="isPersonallyRatedDiv"></div>
@@ -43,5 +43,14 @@ function movieInfoPageView(movieId){
         </div>
     </div>
     `;
+}
 
+function showRatingInput(id) {
+    const isPersonalRatingDiv = document.getElementById('isPersonallyRatedDiv');
+    isPersonalRatingDiv.innerHTML += /*HTML*/ `
+        <div id="ratingInputDiv">
+            <input type="number" id="movieRatingInput" placeholder="Enter your rating (0-1000)">
+            <button id="submitRatingButton" onclick="submitMovieRating(${id})">Submit</button>
+        </div>
+    `;
 }
