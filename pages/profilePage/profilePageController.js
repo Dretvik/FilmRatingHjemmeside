@@ -2,6 +2,7 @@
 // Profile Page
 
 function addMovieToLoggedInUserFavorites(movieId) {
+    favoriteDiv = document.getElementById('isFavoriteInfoDiv');
     if (!model.app.loggedInUser) {
         console.log('No logged-in user. Please log in first.');
         return;
@@ -15,7 +16,7 @@ function addMovieToLoggedInUserFavorites(movieId) {
     // Check if the movie is not already in the user's favoriteMovies array
     const isAlreadyFavorite = user.favoriteMovies.some(favMovie => favMovie.id === movie.id);
     if (isAlreadyFavorite) {
-        console.log('Movie is already in favorites');
+        favoriteDiv.innerHTML = `This movie is allready in your favorites`;
         return;
     }
     // Check if the movie title matches as an additional condition
@@ -25,5 +26,5 @@ function addMovieToLoggedInUserFavorites(movieId) {
     }
     // If all conditions are met, add the movie to the user's favoriteMovies
     user.favoriteMovies.push(movie);
-    console.log(`Added "${movie.title}" to ${user.username}'s favorite movies.`);
+    favoriteDiv.innerHTML = `Added "${movie.title}" to ${user.username}'s favorite movies.`;
 }

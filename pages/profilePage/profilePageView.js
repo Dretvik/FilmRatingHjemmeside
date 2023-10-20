@@ -4,26 +4,7 @@
 function profilePageView() {
     const user = model.app.loggedInUser;
     const favoriteMovieTitles = user.favoriteMovies.map(movie => movie.title).join(', <br>');
-    app.innerHTML = /*HTML*/`
-    <div id="headerDiv">
-        <img id="turtlePowerLogo" src="${model.app.logo}.jpg">
-        <h1>TurtlePower Movies</h1>
-            <!--Adding dropdown menu -->
-    <div class="dropdown">
-        <button class="dropbtn">Menu</button>
-        <div class="dropdown-content">
-            <button onclick="mainPageView()">Main Page</button>
-            <button onclick="profilePageView()">Profile Page</button>
-            <button onclick="userLogout()">Logout</button>
-      <!-- Add more buttons here if needed -->
-         </div>
-      </div>
-          <!-- Search for title function -->
-        <div class="searchDiv">
-            <input type="text" id="searchInput" placeholder="Search for Movie Titles...">
-            <button class="searchButton" onclick="performSearch()">Search</button>
-        </div>
-    </div>
+    app.innerHTML = menuLogoAndSearch + /*HTML*/`
     <div id="profilePageContainer">
         <h2>Hello ${user.username}, welcome to your profile!</h2>
         <br>

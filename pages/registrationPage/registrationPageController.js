@@ -5,14 +5,14 @@ function registerUser(){
     const username = usernameInput.value.charAt(0).toUpperCase() + usernameInput.value.slice(1);
     const email = document.getElementById('registerEmail').value.toLowerCase();
     const password1 = document.getElementById('registerPassword1').value;
-    const password2 = document.getElementById('registerPassword1').value;
+    const password2 = document.getElementById('registerPassword2').value;
     
-    if(password1.value === password2.value){
+    if(password1 === password2){
         const newUser = {
             username: username,
             email: email,
             password: password1,
-            profileImage: './img/profileImages/emptyUser.jpg',
+            profileImage: '',
             isAdmin: false,
             description: '',
             favoriteMovies: [],

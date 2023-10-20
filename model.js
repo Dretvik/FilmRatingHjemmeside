@@ -1,6 +1,5 @@
 //Model
 let currentIndexOfMainCarousel = 0;
-
 const app = document.getElementById('app');
 const model = {
     app: {
@@ -627,6 +626,9 @@ const model = {
             directors: ['Alfred Hitchcock'],
             staringActors: ['Anthony Perkins', 'Janet Leigh', 'Vera Miles'],
         },
+        //////////////////////////////////////////////////////////////////////////////////////////////
+        // Stopped at Psycho at place 34, the next to add wil be 'Parasite'.
+        //////////////////////////////////////////////////////////////////////////////////////////////
         {
             id: 44,
             title: 'Parasite',
@@ -861,7 +863,25 @@ const model = {
         //     directors: [],
         //     staringActors: [],
         // },
-
     ],
-    
 }
+const menuLogoAndSearch = /*HTML*/`
+    <img id="turtlePowerLogo" src="${model.app.logo}.jpg">
+    <h1>TurtlePower Movies</h1>
+    <!--Adding dropdown menu -->
+    <div class="dropdown">
+    <button class="dropbtn">Menu</button>
+    <div class="dropdown-content">
+        <button onclick="mainPageView()">Main Page</button>
+        <button onclick="profilePageView()">Profile Page</button>
+        <br>
+        <button onclick="userLogout()">Logout</button>
+        <!-- Add more buttons here if needed -->
+    </div>
+    </div>
+    <!--  Adding Search for title function -->
+    <div class="searchDiv">
+    <input type="text" id="searchInput" placeholder="Search for Movie Titles...">
+    <button class="searchButton" onclick="performSearch()">Search</button>
+    </div>
+`;

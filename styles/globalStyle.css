@@ -109,8 +109,6 @@ hr {
 #searchInput{
   padding: 10px;
 }
-
-
 /* Style for Movie cards */
 .movieTitles{
   font-size: 1rem;
@@ -152,6 +150,6 @@ hr {
   color: black;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.movieDescriptionDiv {
+/* .movieDescriptionDiv {
   display: none;
-}
+} */

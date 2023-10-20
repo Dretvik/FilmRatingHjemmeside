@@ -1,0 +1,29 @@
+#movieInfoCoverImage {
+    width: 30vw;
+}
+.movieInformationContainer {
+    display: grid;
+    grid-template-areas: "a b";
+}
+.movieInfoAreaA {
+    grid-area: "a";
+    width: 20vw;
+    text-align: end;
+    padding: 3px;
+}
+.movieInfoAreaB {
+    grid-area: "b";
+    width: 20vw;
+    text-align: start;
+    color: white;
+    padding: 3px;
+}
+.movieInfoButtons {
+    height: 40px;
+    width: 120px;
+    margin: 5px;
+    padding: 0px;
+  }
+  #movieInfoContainer {
+    border: 1px solid orange;
+}

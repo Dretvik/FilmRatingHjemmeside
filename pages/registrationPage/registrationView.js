@@ -19,11 +19,11 @@ function registrationView(){
             </div>
             <div class="registrationDivs">
                 <span class="registerGridAreaA">Your password:</span>
-                <input id="registerPassword1" class="registerGridAreaB" type="text" placeholder="Password" value="">
+                <input id="registerPassword1" class="registerGridAreaB" type="password" placeholder="Password" value="">
             </div>
             <div class="registrationDivs">
                 <span class="registerGridAreaA">Enter password again:</span>
-                <input id="registerPassword2" class="registerGridAreaB" type="text" placeholder="Password" value="">
+                <input id="registerPassword2" class="registerGridAreaB" type="password" placeholder="Password" value="">
             </div>
             </div>
             <div id= "registrationButtonsDiv">

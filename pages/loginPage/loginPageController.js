@@ -17,3 +17,17 @@ function userLogin(username, password){
     alert('username or password is wrong, try again');
     return false;
 }
+function addEventlistenersLoginPage(){
+    const usernameInput = document.getElementById('loginUsernameInput');
+    const passwordInput = document.getElementById('loginPasswordInput');
+    usernameInput.addEventListener('keyup', function (event) {
+        if (event.key === 'Enter'){
+            passwordInput.focus();
+        }
+    });
+    passwordInput.addEventListener('keyup', function (event) {
+        if (event.key === 'Enter'){
+            userLogin();
+        }
+    });
+}
