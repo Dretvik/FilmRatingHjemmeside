@@ -1,5 +1,4 @@
-  /* Note: This colors are transparent! */
-  /* 
+  /* Note: This colors are transparent! 
   background-color: #1C00ff00;
   background-color: #00000000; 
   */
@@ -150,6 +149,15 @@ hr {
   color: black;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-/* .movieDescriptionDiv {
-  display: none;
-} */
+/*Animation on movieCards*/
+.movieCards:hover {
+  animation: bounce 0.3s linear;
+}
+@keyframes bounce {
+  50% {
+      transform: translateY(-15px);
+  }
+  100% {
+      transform: translateY(0px);
+  }
+}

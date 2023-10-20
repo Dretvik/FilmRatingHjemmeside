@@ -2,7 +2,6 @@
 /* Innstilling for CarouselView*/
 .carousel {
     display: flex; 
-    overflow: hidden; 
     transition: transform 1.5s ease;
     align-items: center;
     justify-content: center;
