@@ -2,7 +2,10 @@
 // Search Page
 
 function displaySearchedMovies(movies) {
+    const searchInput = document.getElementById('searchInput').value;
+
     app.innerHTML = menuLogoAndSearch + /*HTML*/`
+    <h4>Here a list of is all the movies what contains "${searchInput}" in the title:</h4>
     <div id='moviesDiv'></div>
     `; 
     for (let movie of movies){

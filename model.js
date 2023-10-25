@@ -48,7 +48,21 @@ const model = {
             isAdmin: true,
             description: "Hello, my name is Ellie, and I'm the developer of this website. I'm writing everthing myself and this is only for training purpuses, but it is a really fun project to work on.",
             moviesYouHaveRated: [],
-            favoriteMovies: [],
+            favoriteMovies: [
+                {
+                    id: 1,
+                    title: 'The Dukes of hazzard',
+                    releaseDate: '2005',
+                    cover: 'dukesOfHazzard.jpg',
+                    duration: '1h and 44m',
+                    description: "Cousins Bo, Luke, and Daisy Duke, and their uncle Jesse, egg on the authorities of Hazzard County, Boss Hogg and Sheriff Coltrane",
+                    overallRating: '510',
+                    personalRating: null,
+                    genre: ['Comedy'],
+                    directors: ['Jay Chandrasekhar'],
+                    staringActors: ['Seann William Scott', 'Johnny Knoxville', 'Jessica Simpson'],
+                },
+            ],
         },
         {
             username: 'Admin',

@@ -20,9 +20,6 @@
   justify-content: center;
   text-align: center;
 }
-hr {
-  background-color: orange;
-}
 #turtlePowerLogo{
   border-radius: 50%;
   box-shadow: 4px 4px orange;

@@ -1,5 +1,4 @@
 #profilePageContainer {
-    padding-left: 100px;
     display:grid;
     grid-template-areas: 
     "a b"
@@ -29,10 +28,12 @@
     list-style: none;
 }
 .personalInfoContainers{
-    width: 50vw;
+    width: 40vw;
     word-wrap: break-word;
     color: tomato;
     font-size: 17px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .editProfileInputs{
     height: 40px;
@@ -54,4 +55,12 @@
 }
 .usernameProfilePage{
     color: red;
+}
+.favoriteMovieLabels{
+    cursor: pointer;
+    margin: 10px;
+    text-align: center;
+}
+.h4ProfilePage{
+    color: white;
 }

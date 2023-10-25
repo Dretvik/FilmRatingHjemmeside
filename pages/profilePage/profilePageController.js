@@ -49,13 +49,17 @@ function saveProfileInfo() {
     profilePageView();
 }
 
-function editProfileAddToFavMovie(){
+function editProfileAddToFavMovie() {
     const user = model.app.loggedInUser;
     const selectedMovies = [];
     const movieCheckboxes = document.querySelectorAll('input[type="checkbox"]');
     for (let checkbox of movieCheckboxes) {
         if (checkbox.checked) {
-            selectedMovies.push(checkbox.value);
+            const movieId = parseInt(checkbox.value);
+            const movie = model.movies.find(movie => movie.id === movieId);
+            if (movie) {
+                selectedMovies.push(movie);
+            }
         }
     }
     if (selectedMovies.length > 0) {
@@ -63,16 +67,15 @@ function editProfileAddToFavMovie(){
     }
 }
 
-function generateFavMovieList(movieTitles) {
+function generateFavMovieList(movieObjects) {
     let movieList = '';
-    if (movieTitles.length > 0) {
-        for (let movieTitle of movieTitles) {
+    if (movieObjects.length > 0) {
+        for (let movie of movieObjects) {
             movieList += `
-            <label for="${movieTitle}">${movieTitle}</label><br>
+            <label class="favoriteMovieLabels" onclick="movieInfoPageView(${movie.id})">${movie.title}</label><br>
         `;
         }
-    } 
-    else {
+    } else {
         movieList = 'No favorite movies selected';
     }
     return movieList;
