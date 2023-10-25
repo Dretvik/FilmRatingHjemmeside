@@ -1,34 +1,57 @@
-#profilePageContainer{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+#profilePageContainer {
+    padding-left: 100px;
+    display:grid;
+    grid-template-areas: 
+    "a b"
+    ;
 }
-#profileInfoDiv{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "a b";
+
+.editProfileButtons {
+    background-color: #3498db;
+    color: white;
+    box-shadow: 2px 1px orange;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 40px;
+    left: 110px;
+}
+.editProfileButtons:hover {
+    background-color: tomato;
+}
+
+.profilePicture{
+    width: 40%;
+}
+.favMovieList {
+    list-style: none;
+}
+.personalInfoContainers{
+    width: 50vw;
     word-wrap: break-word;
-    height: 40rem;
-    width: 40rem;
-    border: 1px solid orange;
-    padding-top: 50px;
-}
-.prorfileImages{
-    width: 80%;
-    height: 80%;
-    border-radius: 50%;
-}
-.profileInfoGridAreaA{
-    width: 80%;
-    grid-area: a;
-    padding-left: 40px;
-}
-.profileInfoGridAreaB{
-    grid-area: b;
-    width: 50%
-}
-#favoriteMoviesDivProfilePage{
     color: tomato;
+    font-size: 17px;
+}
+.editProfileInputs{
+    height: 40px;
+}
+#editProfileDescriptionInput{
+    width: 40%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+#editFavMoviesProfilePage{
+    height: 150px;
+    overflow: auto;
+    text-align: start;
+}
+.usernameProfilePage{
+    color: red;
 }
